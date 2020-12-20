@@ -1,0 +1,172 @@
+ <html>
+<head>
+<title>Gallery</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
+
+
+<style>
+html{
+background: url("image/biru.jpg") no-repeat center fixed;
+background-size:cover;
+}
+
+.clock{
+ position: absolute;
+ top: 110px;
+ right: 15px;
+ transform: translateX(-50%) translateY(-50%);
+ color: navy;
+ font-family: verdana;
+ font-size: 25px;
+ border: 2px solid black;
+ border-radius: 10px;
+ float : right;
+ padding: 0px 5px 0px 5px;
+}
+
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href=index.html>Home</a></li>
+  <li><a href=biodata.html>Biodata</a></li>
+  <li><a href=experience.html>Experience</a></li>
+  <li><a href=education.html>Education</a></li>
+  <li><a href=myfamily.html>Family</a></li>
+  <li><a href=gallery.html>Gallery</a></li>
+  <li><a href=other.html>Other Necessary Pages</a></li>
+  <li style="float:right"><font face="Bernard MT Condensed"><font size="10"><a href="#home.html">Welcome to My World!</a></li>
+</ul>
+
+<h2 align="center"> My Gallery</h2>
+
+<div class="container">
+  <img src="image/gambarkelas.jpg" alt="Gambar Kelas" class="image">
+  <div class="overlay">
+    <div class="text">Sastera 1</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/predip.jpg" alt="Pre-Diploma class" class="image">
+  <div class="overlay">
+    <div class="text">Class Pra-Diploma</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/interim.jpg" alt="Interim" class="image">
+  <div class="overlay">
+    <div class="text">Pre-Diploma Orientation Week</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/kelas.jpg" alt="Kelas" class="image">
+  <div class="overlay">
+    <div class="text">Photoshoot Classes</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/kelasmissyana.jpg" alt="Kelas Miss Yana" class="image">
+  <div class="overlay">
+    <div class="text">Miss Yana's class</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/dua.jpg" alt="Saf" class="image">
+  <div class="overlay">
+    <div class="text">SAF</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/futsal.jpg" alt="Training Futsal" class="image">
+  <div class="overlay">
+    <div class="text">Training Futsal</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/mesyuarat.jpg" alt="PSSCM Meeting" class="image">
+  <div class="overlay">
+    <div class="text">PSSCM AGM</div>
+  </div>
+</div>
+</body>
+</html>
